@@ -1,0 +1,16 @@
+import Proptypes from 'prop-types'
+const Header = ({ title }) => {
+    return (
+        <header>
+            <h1 style= {{color:'red'}}>{title}</h1>
+
+        </header>
+    )
+}
+Header.defaultProps = {
+    title: 'Task Tracker',
+}
+Header.propTypes = {
+    title: Proptypes.string.isRequired,
+}
+export default Header
